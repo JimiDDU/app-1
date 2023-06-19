@@ -1,4 +1,4 @@
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -51,7 +51,7 @@ class _CouponsScreenState extends BaseRouteState {
                   elevation: 0,
                   backgroundColor: Colors.transparent,
                   heroTag: null,
-                  child: Badge(
+                  child: badges.Badge(
                     badgeContent: Text(
                       "${global.cartCount}",
                       style: TextStyle(color: Colors.white, fontSize: 08),

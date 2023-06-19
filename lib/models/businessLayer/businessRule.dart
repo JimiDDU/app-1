@@ -179,7 +179,7 @@ class BusinessRule {
 
   Future<File> _cropImage(String sourcePath) async {
     try {
-      File _croppedFile = await ImageCropper.cropImage(
+      File _croppedFile = await ImageCropper().cropImage(
         sourcePath: sourcePath,
         aspectRatio: CropAspectRatio(ratioX: 1, ratioY: 1),
         androidUiSettings: AndroidUiSettings(
